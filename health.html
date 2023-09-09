@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Medication Reminder</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Medication Reminder</h1>
+        <div id="registration-form" class="card">
+            <h2>Register</h2>
+            <form id="registration">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="number" id="age" placeholder="Age" required>
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        <div id="medication-entry-form" class="card">
+            <h2>Medication Entry</h2>
+            <form id="medication-form">
+                <input type="text" id="medication-name" placeholder="Medication Name" required>
+                <input type="text" id="dosage" placeholder="Dosage" required>
+                <input type="text" id="frequency" placeholder="Frequency" required>
+                <textarea id="instructions" placeholder="Special Instructions"></textarea>
+                <button type="submit">Add Medication</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
